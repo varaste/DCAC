@@ -1,0 +1,58 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="node.js">
+</head>
+<body>
+
+<div class="box">
+	<div class="display"><input type="text" readonly size="20" id="d"></div>
+	<div class="keys">
+		<p><html>
+<head>
+<script type="text/javascript">
+function digital_clock()
+{
+	var date=new Date();
+	var hours=date.getHours();
+	var minutes=date.getMinutes();
+	var seconds=date.getSeconds();
+	hours=addZero(hours);
+	minutes=addZero(minutes);
+	seconds=addZero(seconds);
+	document.getElementById('hours').innerHTML = hours;
+	document.getElementById('minutes').innerHTML = minutes;
+	document.getElementById('seconds').innerHTML = seconds;
+	setTimeout('digital_clock()',500);
+}
+function addZero(date_part)
+{
+ 	if(date_part < 10)
+		{
+  			date_part="0" + date_part;
+                               }
+		 return date_part;
+}
+</script>
+</head>
+<body onload="digital_clock()" bgcolor=lightgreen>
+<center>
+<div style="border:lightblack 2px solid;width:100;background-color:#bccd95">
+<b id=hours> </b> &nbsp;:&nbsp;
+<b id=minutes> </b>&nbsp;:&nbsp;
+<b id=seconds> </b> 
+</div>
+</center>
+</body>
+</html><input type="button" class="button gray" value="mrc" onclick='c("Calculator Created...")'><input type="button" class="button gray" value="m-" onclick='c("................by................")'><input type="button" class="button gray" value="m+" onclick='c("Nanzige Mahawuya.")'><input type="button" class="button pink" value="/" onclick='v("/")'></p>
+		<p><input type="button" class="button black" value="7" onclick='v("7")'><input type="button" class="button black" value="8" onclick='v("8")'><input type="button" class="button black" value="9" onclick='v("9")'><input type="button" class="button pink" value="*" onclick='v("*")'></p>
+		<p><input type="button" class="button black" value="4" onclick='v("4")'><input type="button" class="button black" value="5" onclick='v("5")'><input type="button" class="button black" value="6" onclick='v("6")'><input type="button" class="button pink" value="-" onclick='v("-")'></p>
+		<p><input type="button" class="button black" value="1" onclick='v("1")'><input type="button" class="button black" value="2" onclick='v("2")'><input type="button" class="button black" value="3" onclick='v("3")'><input type="button" class="button pink" value="+" onclick='v("+")'></p>
+		<p><input type="button" class="button black" value="0" onclick='v("0")'><input type="button" class="button black" value="." onclick='v(".")'><input type="button" class="button black" value="C" onclick='c("")'><input type="button" class="button orange" value="=" onclick='e()'></p>
+	</div>
+</div>
+
+</body>
+</html>
+
