@@ -10,32 +10,6 @@
 	<div class="display"><input type="text" readonly size="20" id="d"></div>
 	<div class="keys">
 		<p><html>
-<head>
-<script type="text/javascript">
-function digital_clock()
-{
-	var date=new Date();
-	var hours=date.getHours();
-	var minutes=date.getMinutes();
-	var seconds=date.getSeconds();
-	hours=addZero(hours);
-	minutes=addZero(minutes);
-	seconds=addZero(seconds);
-	document.getElementById('hours').innerHTML = hours;
-	document.getElementById('minutes').innerHTML = minutes;
-	document.getElementById('seconds').innerHTML = seconds;
-	setTimeout('digital_clock()',500);
-}
-function addZero(date_part)
-{
- 	if(date_part < 10)
-		{
-  			date_part="0" + date_part;
-                 }
-		 return date_part;
-}
-</script>
-</head>
 <body onload="digital_clock()" bgcolor=lightgreen>
 <center>
 <div style="border:lightblack 2px solid;width:100;background-color:#bccd95">
